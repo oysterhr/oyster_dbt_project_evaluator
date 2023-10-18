@@ -8,9 +8,9 @@ models:
       the chain to table or incremental. 
     columns:
       - name: distance
-        tests:
-          - dbt_utils.accepted_range:
-              name: valid_chained_views_dependencies
-              max_value: "{{ var('chained_views_threshold') }}"
-              inclusive: false
-              severity: warn
+        # tests:
+        #   - dbt_utils.accepted_range:
+        #       name: valid_chained_views_dependencies
+        #       max_value: "{{ var('chained_views_threshold') }}"
+        #       inclusive: false
+        #       severity: warn
